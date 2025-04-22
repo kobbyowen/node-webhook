@@ -9,7 +9,7 @@ import { registerMetricsHandlerToTaskQueueEvents } from "./utils/helpers.js";
 import { Task } from "./task.js";
 
 export const app = express();
-export const taskQueue = new TaskQueue(1);
+export const taskQueue = new TaskQueue();
 export const metrics = new Metrics();
 
 app.use(bodyParser.json());
